@@ -52,34 +52,34 @@ int is_digit(char c)
 }
 
 /**
- * convert_magnitude_number - Casts a number to the specified magnitude
+ * convert_size_number - Casts a number to the specified size
  * @num: Number to be casted.
- * @magnitude: Number indicating the type to be casted.
+ * @size: Number indicating the type to be casted.
  *
  * Return: Casted value of num
  */
-long int convert_magnitude_number(long int num, int magnitude)
+long int convert_size_number(long int num, int size)
 {
-	if (magnitude == S_LONG)
+	if (size == S_LONG)
 		return (num);
-	else if (magnitude == S_SHORT)
+	else if (size == S_SHORT)
 		return ((short)num);
 
 	return ((int)num);
 }
 
 /**
- * convert_magnitude_unsgnd - Casts a number to the specified magnitude
+ * convert_size_unsgnd - Casts a number to the specified size
  * @num: Number to be casted
- * @magnitude: Number indicating the type to be casted
+ * @size: Number indicating the type to be casted
  *
  * Return: Casted value of num
  */
-long int convert_magnitude_unsgnd(unsigned long int num, int magnitude)
+long int convert_size_unsgnd(unsigned long int num, int size)
 {
-	if (magnitude == S_LONG)
+	if (size == S_LONG)
 		return (num);
-	else if (magnitude == S_SHORT)
+	else if (size == S_SHORT)
 		return ((unsigned short)num);
 
 	return ((unsigned int)num);
